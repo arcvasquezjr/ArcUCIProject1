@@ -1,0 +1,11 @@
+All these files should be in /etc/ansible folder of the docker container
+
+ansible.cfg
+ArcOregon.pem
+elk-playbook.yml
+filebeat-config.yml
+filebeat-playbook.yml
+hosts
+metricbeat-config.yml
+metricbeat-playbook.yml
+webservers-playbook.yml
