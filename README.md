@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/Project1 Network Diagram)
+(Images/Project1 Network Diagram.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on AWS. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML files may be used to install only certain pieces of it, such as webservers-playbook.yml, elk-playbook.yml, filebeat-playbook.yml and metricbeat-playbook.yml.
 
