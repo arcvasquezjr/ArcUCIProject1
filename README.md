@@ -69,13 +69,13 @@ A summary of the access policies in place can be found in the table below.
 					 
 ### YML files used in this project (under Working YML directoty or folder)
 
-webservers-playbook.yml
-elk-playbook.yml
-filebeat-playbook.yml
-metricbeat-playbook.yml
-filebeat-config.yml
-metricbeat-config.yml
-additionally ansible.cfg, ArcOregon.pen key was also copied on the folder mentioned above.
+ webservers-playbook.yml
+ elk-playbook.yml
+ filebeat-playbook.yml
+ metricbeat-playbook.yml
+ filebeat-config.yml
+ metricbeat-config.yml
+ additionally ansible.cfg, ArcOregon.pen key was also copied on the folder mentioned above.
 
 ### Elk Configuration
 
