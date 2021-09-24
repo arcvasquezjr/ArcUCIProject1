@@ -88,7 +88,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-Webserver1 on private ip 172.31.3.214
+Webserver1 on private ip 172.31.3.214 and
 Webserver2 on private IP 172.31.16.110
 
 We have installed the following Beats on these machines:
