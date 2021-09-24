@@ -65,8 +65,8 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box       | No                  | 47.180.136.68/32     |
 |Webserver1      | Yes                 | 0.0.0.0/0            |
 |Webserver2      | Yes                 | 0.0.0.0/0            |
-|Elk Server      | No                  | 47.180.136.68/32 and |
-					 172.31.9.197/20
+|Elk Server      | No                  | 47.180.136.68/32 and 172.31.9.197/20|
+					 
 
 ### Elk Configuration
 
