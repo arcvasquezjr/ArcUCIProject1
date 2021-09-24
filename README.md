@@ -118,7 +118,7 @@ In order to use the playbooks, you will need to have an Ansible control node alr
 
 ###Setting up a Docker Ansible Jumpbox control node
 
-	- Copy the ArcOregon.pem file from your local to Jumpbox. If you have copied your key from previous activities, you can skip to the next step, otherwise from your local machine, using CMD, go to the folder where you 		  		have your key, for my case it is ArcOregon.pem under Downloads folder. 
+	- Copy the ArcOregon.pem file from your local to Jumpbox. If you have copied your key from previous activities, you can skip to the next step, otherwise from your local machine, using CMD, go to the folder where you	have your key, for my case it is ArcOregon.pem under Downloads folder. 
 		  	Use the command, scp -i "ArcOregon.pem" ArcOregon.pem ec2-172.31.9.197.us-west-2.compute.amazonaws.com:/home/ec2-user.
 
 Installing Docker
@@ -135,7 +135,7 @@ Installing Docker
 		-To check the docker service status, use the command,
 			ec2-user@172.31.9.197 ~}$ sudo service docker status	you should see it active (running)...
 
-		-To avoid using the sudo command multiple times, use the usermod command to modify the docker group (add ec2-user to the docker group). For this to work you will need to disconnect your current SSH connection and 												reconnect, otherwise it won't work!
+		-To avoid using the sudo command multiple times, use the usermod command to modify the docker group (add ec2-user to the docker group). For this to work you will need to disconnect your current SSH connection and reconnect, otherwise it won't work!
 			ec2-user@172.31.9.197 ~}$ sudo usermod -a -G docker ec2-user
 
 		-To check if Docker is installed, just use the command,
