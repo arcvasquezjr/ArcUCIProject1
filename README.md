@@ -67,6 +67,15 @@ A summary of the access policies in place can be found in the table below.
 |Webserver2      | Yes                 | 0.0.0.0/0            |
 |Elk Server      | No                  | 47.180.136.68/32 and 172.31.9.197/20|
 					 
+### YML files used in this project (under Working YML directoty or folder)
+
+webservers-playbook.yml
+elk-playbook.yml
+filebeat-playbook.yml
+metricbeat-playbook.yml
+filebeat-config.yml
+metricbeat-config.yml
+additionally ansible.cfg, ArcOregon.pen key was also copied on the folder mentioned above.
 
 ### Elk Configuration
 
