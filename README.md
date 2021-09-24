@@ -79,9 +79,13 @@ Without modules, you’d have to rely on ad-hoc commands and scripting to accomp
 The playbook implements the following tasks:
 
  -use the user name "ubuntu" for the installation
- -increase the virtual memory 
+ 
+ -increase the virtual memory
+ 
  -install python
+ 
  -install docker
+ 
  -download and launch a docker web container with the specified ports
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
