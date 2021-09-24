@@ -346,6 +346,7 @@ VII.) Run the playbook metricbeat-playbook.yml;
 VIII.) Open a browser and navigate to http://172.31.30.8:5601/app/kibana to check that the installation worked as expected.
 
 VIX.) Adjust your security groups Inbound Rules, to prevent everybody from accessing your setup.
+
 					For WebSrv-SG and ELK-SG Inbound Rules		Port Range		Source
 								All ICMP-IPV4		All			0.0.0.0/0	
 								SSH			22		 	My IP Adrress Only 47.180.136.68/32
