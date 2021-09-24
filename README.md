@@ -174,7 +174,7 @@ Installing Ansible
 										To check if Ansible is already running, use the command;
 										ansible, if the help appears, then it's already running
 			
-										Exit back to Docker.n To use Ansible, you need to have Ansible client, these are VMs that you are going to manage, install services, etc. Go ahead and 										create another VM instance in your VPC, if you don't have one yet.
+										Exit back to Docker. To use Ansible, you need to have Ansible client, these are VMs that you are going to manage, install services, etc. Go ahead and 										create another VM instance in your VPC, if you don't have one yet.
 
 	3.) List the containers by using the command,
 
