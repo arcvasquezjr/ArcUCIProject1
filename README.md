@@ -252,47 +252,47 @@ IV.) Create a filebeat playbook, named it filebeat-playbook.yml. Paste the code 
 
 					root@d40e93b41f3a:~# nano filebeat-playbook.yml
 
----
-- name: Installing and Launching Filebeat
-  hosts: webservers
-  remote_user: ec2-user
-  become: yes
-  tasks:
-    # Use command module
-  - name: Download filebeat .rpm file
-    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-oss-7.8.1-x86_64.rpm
+			---
+			- name: Installing and Launching Filebeat
+			  hosts: webservers
+			  remote_user: ec2-user
+			  become: yes
+			  tasks:
+			    # Use command module
+			  - name: Download filebeat .rpm file
+			    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-oss-7.8.1-x86_64.rpm
  
-    # Use command module 
-  - name: Install Filebeat .rpm
-    command: rpm -vi filebeat-oss-7.8.1-x86_64.rpm
+			    # Use command module 
+			  - name: Install Filebeat .rpm
+			    command: rpm -vi filebeat-oss-7.8.1-x86_64.rpm
 
-    # Use command module 
-#  - name: Install Java 1.8 
-#    command: yum install java-1.8.0-*
+			    # Use command module 
+			#  - name: Install Java 1.8 
+			#    command: yum install java-1.8.0-*
  
-    # Use copy module
-  - name: Drop in Filebeat.yml
-    copy:
-      src: /etc/ansible/filebeat-config.yml
-      dest: /etc/filebeat/filebeat.yml
+			    # Use copy module
+			  - name: Drop in Filebeat.yml
+			    copy:
+			      src: /etc/ansible/filebeat-config.yml
+			      dest: /etc/filebeat/filebeat.yml
 
-    # Use command module
-  - name: Enable and Configure System Module
-    command: sudo filebeat module enable system
+			    # Use command module
+			  - name: Enable and Configure System Module
+			    command: sudo filebeat module enable system
 
-    # Use command module 
-  - name: Setup Filebeat
-    command: sudo filebeat setup
+			    # Use command module 
+			  - name: Setup Filebeat
+			    command: sudo filebeat setup
 
-    # Use command module
-  - name: Start filebeat service
-    command: sudo service filebeat start
+			    # Use command module
+			  - name: Start filebeat service
+			    command: sudo service filebeat start
 
-    # Use command module
-  - name: Enable service filebeat on boot
-    systemd:
-      name: filebeat
-      enabled: yes
+			    # Use command module
+			  - name: Enable service filebeat on boot
+			    systemd:
+			      name: filebeat
+			      enabled: yes
 
 
 V.) Run the filebeat-playbook.yml;
