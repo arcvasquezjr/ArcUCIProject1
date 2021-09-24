@@ -81,7 +81,7 @@ A summary of the access policies in place can be found in the table below.
  
  metricbeat-config.yml
  
- additionally ansible.cfg, ArcOregon.pen key was also copied on the folder mentioned above.
+ additionally ansible.cfg and ArcOregon.pem key was also copied on the folder mentioned above.
 
 ### Elk Configuration
 
